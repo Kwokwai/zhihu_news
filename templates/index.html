@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}
+<title>知乎日报 - 每天3次, 每次7分钟</title>
+{% endblock %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static "news/css/news.css" %}" >
+{% endblock %}
+
+{% block content %}
+
+
+<div class="main-content">
+    <div class="row content" id="row_content">
+        {% for news in news_list %}
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="{{ news.share_url }}" >
+                        <img  src="{{ news.image_url }}" class="preview">
+                        <span class="title">{{ news.news_title }}</span>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}

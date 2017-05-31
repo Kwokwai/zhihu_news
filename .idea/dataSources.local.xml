@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - Zh_news@localhost" uuid="71f204e5-177c-47a2-8bf0-df8d1a2f2715">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>Zh_news:</introspection-scope>
+      <resolve-scope>Zh_news:</resolve-scope>
+    </data-source>
+  </component>
+</project>
